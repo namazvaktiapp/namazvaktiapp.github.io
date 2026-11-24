@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Namaz Vakitleri: vakitler, kıble ve zikir</title>
+  <meta name="description" content="Namaz vakitleri iPhone'unda internetsiz hesaplanır. Kilit ekranı, Dynamic Island, widget'lar, Apple Watch, kıble pusulası, tesbih ve günün duası.">
+  <meta name="theme-color" content="#1c1f4e">
+  <meta name="apple-itunes-app" content="app-id=6752613671">
+  <meta property="og:title" content="Namaz Vakitleri: her vakit, gökyüzüyle">
+  <meta property="og:description" content="Vakitler, kıble, tesbih ve dualar. iPhone ve Apple Watch için ücretsiz.">
+  <meta property="og:image" content="https://namazvaktiapp.github.io/assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/lamp.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/i18n.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="sky" aria-hidden="true"></div>
+  <canvas class="stars" aria-hidden="true"></canvas>
+  <div class="pattern" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="brand" href="./" data-lang-link="./"><img src="assets/img/lamp.png" alt=""><span>Namaz Vakitleri</span></a>
+    <span class="spacer"></span>
+    <select class="lang" aria-label="Dil / Language">
+      <option value="tr">Türkçe</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="ar">العربية</option>
+    </select>
+    <a class="get" href="https://apps.apple.com/app/id6752613671" data-i18n="nav.get">İndir</a>
+  </header>
+
+  <main>
+    <section class="hero" data-sky="0">
+      <div>
+        <div class="hanging" aria-hidden="true">
+          <div class="lamp"><span class="rope"></span><img src="assets/img/lamp.png" alt=""><span class="flame"></span></div>
+        </div>
+        <h1><span data-i18n="hero.title1">Her vakit,</span> <em data-i18n="hero.title2">gökyüzüyle.</em></h1>
+        <p class="lead" data-i18n="hero.lead">Namaz vakitleri telefonunda, internetsiz ve dakikası dakikasına hesaplanır. Ekrandaki gökyüzü vakitle birlikte değişir; asılı kandil sıradaki namaz yaklaştıkça titrer.</p>
+        <a class="badge" href="https://apps.apple.com/app/id6752613671"><img class="store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" alt="App Store" width="168" height="56"></a>
+        <p class="note" data-i18n="hero.note">iPhone ve Apple Watch için ücretsiz</p>
+      </div>
+    </section>
+
+    <section class="moment" data-sky="1.3">
+      <div class="copy">
+        <p class="when"><span class="name" data-i18n="sunrise.name">Güneş</span><span class="ar" lang="ar">الشروق</span></p>
+        <h2 data-i18n="sunrise.h">İnternetsiz, dakikası dakikasına.</h2>
+        <p data-i18n="sunrise.p1">Vakitler cihazında, Diyanet yöntemiyle hesaplanır.</p>
+        <p data-i18n="sunrise.p2">Birden fazla şehir kaydet, bir dokunuşla aralarında geç.</p>
+      </div>
+      <div class="visual">
+        <div class="phone"><img data-base="" data-shot="times.jpg" src="assets/img/tr/times.jpg" data-i18n-alt="alt.times" alt="Vakitler ekranı" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="moment flip" data-sky="3">
+      <div class="copy">
+        <p class="when"><span class="name" data-i18n="noon.name">Öğle</span><span class="ar" lang="ar">الظهر</span></p>
+        <h2 data-i18n="noon.h">Telefonunu açmadan bil.</h2>
+        <p data-i18n="noon.p1">Sıradaki vakit ve kalan süre kilit ekranında ve Dynamic Island'da canlı akar.</p>
+        <p data-i18n="noon.p2">Ana ekran ve kilit ekranı widget'ları günün vakitlerini gösterir.</p>
+      </div>
+      <div class="visual">
+        <div class="stack">
+          <img class="island" data-base="" data-shot="island.png" src="assets/img/tr/island.png" data-i18n-alt="alt.island" alt="Dynamic Island" loading="lazy">
+          <img data-base="" data-shot="live.png" src="assets/img/tr/live.png" data-i18n-alt="alt.live" alt="Kilit ekranı" loading="lazy">
+          <div class="row">
+            <img data-base="" data-shot="widget-small.png" src="assets/img/tr/widget-small.png" data-i18n-alt="alt.widgets" alt="Widget" loading="lazy">
+            <img data-base="" data-shot="widget-qibla.png" src="assets/img/tr/widget-qibla.png" alt="" loading="lazy">
+          </div>
+          <img data-base="" data-shot="widget-medium.png" src="assets/img/tr/widget-medium.png" alt="" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="moment" data-sky="4.6">
+      <div class="copy">
+        <p class="when"><span class="name" data-i18n="asr.name">İkindi</span><span class="ar" lang="ar">العصر</span></p>
+        <h2 data-i18n="asr.h">Kıble, nerede olursan.</h2>
+        <p data-i18n="asr.p">Pusula seni Kâbe'ye çevirir; doğru yöne döndüğünde altın bir ışık yanar.</p>
+      </div>
+      <div class="visual">
+        <div class="phone"><img data-base="" data-shot="qibla.jpg" src="assets/img/tr/qibla.jpg" data-i18n-alt="alt.qibla" alt="Kıble pusulası" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="moment flip" data-sky="6.3">
+      <div class="copy">
+        <p class="when"><span class="name" data-i18n="maghrib.name">Akşam</span><span class="ar" lang="ar">المغرب</span></p>
+        <h2 data-i18n="maghrib.h">Gerçek bir tesbih gibi.</h2>
+        <p data-i18n="maghrib.p1">Her dokunuşta bir taş ipten düşer ve alttakilere çarpar; sesi ve titreşimiyle.</p>
+        <p data-i18n="maghrib.p2">Namaz sonrası tesbihat 33 × 3, hazır zikirler, kendi hedefin ve tur sayacı.</p>
+      </div>
+      <div class="visual">
+        <div class="with-photo">
+          <img class="photo" src="assets/img/tesbih.jpg" data-i18n-alt="alt.tesbih" alt="Elinde tesbih tutan yaşlı bir adam" loading="lazy">
+          <div class="phone"><img data-base="" data-shot="zikir.jpg" src="assets/img/tr/zikir.jpg" data-i18n-alt="alt.zikir" alt="Zikirmatik" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="moment" data-sky="8">
+      <div class="copy">
+        <p class="when"><span class="name" data-i18n="isha.name">Yatsı</span><span class="ar" lang="ar">العشاء</span></p>
+        <h2 data-i18n="isha.h">Her gün bir dua.</h2>
+        <p data-i18n="isha.p">Seçilmiş dualar Arapça aslı, okunuşu, meali ve kaynağıyla.</p>
+      </div>
+      <div class="visual">
+        <div class="phone"><img data-base="" data-shot="duas.jpg" src="assets/img/tr/duas.jpg" data-i18n-alt="alt.duas" alt="Dualar" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="finale" data-sky="9">
+      <h2 data-i18n="finale.h">Sıradaki vakit, cebinde.</h2>
+      <ul class="promises">
+        <li data-i18n="finale.p1">Hesap açman gerekmez</li>
+        <li data-i18n="finale.p2">Reklam yok</li>
+        <li data-i18n="finale.p3">Konumun cihazında kalır</li>
+      </ul>
+      <a class="badge" href="https://apps.apple.com/app/id6752613671"><img class="store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83" alt="App Store" width="168" height="56" style="margin:0 auto"></a>
+      <p class="note" data-i18n="finale.devices">Türkçe, İngilizce, Almanca, Fransızca ve Arapça</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="support/" data-lang-link="support/" data-i18n="footer.support">Destek</a>
+    <a href="privacy/" data-lang-link="privacy/" data-i18n="footer.privacy">Gizlilik</a>
+    <a href="mailto:namaz@mobirexa.com">namaz@mobirexa.com</a>
+    <span>© 2026 Namaz Vakti</span>
+  </footer>
+</body>
+</html>
